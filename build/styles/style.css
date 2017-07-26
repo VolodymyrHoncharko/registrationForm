@@ -1,0 +1,282 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: url("../../../build/fonts/lato-regular-webfont.eot");
+  src: url("../../../build/fonts/lato-regular-webfont.woff2") format("woff2"), url("../../../build/fonts/lato-regular-webfont.woff") format("woff"), url("../../../build/fonts/lato-regular-webfont.ttf") format("truetype"), url("../../../build/fonts/lato-regular-webfont.woff2") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, ul, li, p,
+header, footer, content, figure, figcaption, aside, article, section,
+nav, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+header, footer, content, figure, figcaption, aside, article, section,
+nav, audio, video {
+  display: block;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a > img {
+  display: block;
+  border: 0;
+  outline: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "iconFontName";
+  src: url("../fonts/iconFontName.eot");
+  src: url("../fonts/iconFontName.eot?#iefix") format("eot"), url("../fonts/iconFontName.woff2") format("woff2"), url("../fonts/iconFontName.woff") format("woff"), url("../fonts/iconFontName.ttf") format("truetype"), url("../fonts/iconFontName.svg#iconFontName") format("svg");
+}
+
+.icon-done:before, .message_done:before {
+  font-family: "iconFontName";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.icon-done:before {
+  content: "";
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 100%;
+}
+
+body {
+  background: url("../img/bg.jpg");
+}
+
+.form_container {
+  width: 320px;
+  margin: 100px auto;
+}
+
+.contacts {
+  padding: 30px 0;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #cfdede;
+  position: relative;
+}
+
+.contacts:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.contacts_fieldset {
+  border: 0;
+}
+
+.contacts_title {
+  position: absolute;
+  top: -5px;
+  left: 30px;
+  background: #01b3b3;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.75);
+}
+
+.contacts_title:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -6px;
+  border-top: 3px solid transparent;
+  border-right: 3px solid #01b3b3;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+
+.contacts_input {
+  width: 100%;
+  max-width: 260px;
+  line-height: 40px;
+  padding: 0 15px;
+  color: #000;
+  font-size: 12px;
+  margin-bottom: 15px;
+  outline: 0;
+  border: 1px solid #cfdede;
+  background: url("../img/bg.jpg");
+}
+
+.contacts_input::-webkit-input-placeholder {
+  background: transparent;
+  color: #000;
+  font-style: italic;
+}
+
+.contacts_submit {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px 82px;
+  margin-top: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#01b3b3), to(#5f9ea0));
+  background: -webkit-linear-gradient(top, #01b3b3, #5f9ea0);
+  background: linear-gradient(to bottom, #01b3b3, #5f9ea0);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  font-size: 12px;
+  outline: 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.contacts_submit:hover {
+  background: #fff;
+  border: 1px solid #cfdede;
+  color: #5f9ea0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.contacts_label {
+  display: block;
+  text-align: left;
+  padding: 10px 30px;
+}
+
+.contacts_label_symbol {
+  color: #01b3b3;
+}
+
+.error {
+  color: red;
+  border: 1px solid red;
+}
+
+#name-error {
+  position: absolute;
+  font-size: 13px;
+  top: 10%;
+  left: 42%;
+  border: 1px solid transparent;
+}
+
+#email-error {
+  position: absolute;
+  font-size: 13px;
+  top: 27%;
+  left: 33%;
+  border: 1px solid transparent;
+}
+
+#password-error {
+  position: absolute;
+  font-size: 13px;
+  top: 45%;
+  left: 42%;
+  border: 1px solid transparent;
+}
+
+#phone-error {
+  position: absolute;
+  font-size: 13px;
+  top: 64%;
+  left: 41%;
+  border: 1px solid transparent;
+}
+
+.overlay_win {
+  display: none;
+}
+
+.overlay {
+  background: #000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  opacity: .5;
+}
+
+.message {
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -200px;
+  overflow: hidden;
+  z-index: 2000;
+  width: 500px;
+  padding: 60px;
+  text-align: center;
+  margin-left: -250px;
+}
+
+.message_done {
+  position: relative;
+  display: block;
+  color: #fff;
+  margin: 40px auto 0;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#01b3b3), to(#5f9ea0));
+  background: -webkit-linear-gradient(top, #01b3b3, #5f9ea0);
+  background: linear-gradient(to bottom, #01b3b3, #5f9ea0);
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  outline: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.message_done:hover {
+  background: #fff;
+  border: 1px solid #cfdede;
+  color: #5f9ea0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.message_done:before {
+  content: "";
+}
+
+.message_done:before {
+  position: absolute;
+  top: 10px;
+  left: 65px;
+}
